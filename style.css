@@ -1,0 +1,364 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #E8EEF3;
+  background-image: url(hungry-section.png);
+  background-repeat: no-repeat;
+  background-position: 0% 80%;
+}
+
+/* Navigation bar */
+
+.nav-list {
+  background: linear-gradient(150deg, #7E6EEF 0%, #E57FF0 50%, #FED600 100%);
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 40px;
+  font-family: 'Nunito';
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0.75px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #FFFEFC;
+}
+
+.nav-item:first-child {
+  margin-right: auto;
+}
+
+/* Search BAR on nav bar */
+
+form {
+  display: flex;
+  position: relative;
+}
+
+form > img {
+  position: absolute;
+  bottom: 1px;
+  top: 1px;
+  left: 5px;
+}
+
+form > input {
+  padding-left: 30px;
+  border-radius: 4px;
+  border: 1px solid #E57FF0;
+  font-size: 0.8rem;
+  width: 13rem;
+  height: 1.5rem;
+  width: fit-content;
+}
+
+/* Search BUTTON on nav bar */
+
+form > button {
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 4px;
+  border: 1px solid #FFF;
+  background: #7E6EEF;
+  color: white;
+  width: fit-content;
+}
+
+/* rule for buttons */
+
+#subscribe-button:hover, form > button:hover {
+  background-color:#E57FF0 ;
+}
+
+/* Main container */
+
+.grid-container {
+  max-width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+  grid-gap: 10px;
+}
+
+/* common rules for elements */
+
+h2 {
+  color: #342A83;
+  font-family: Nunito;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: 1.5px;
+  margin-top: 50px;
+}
+
+.subtitles {
+  color: #656F77;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+h3 {
+  color: #000;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 110%;
+  letter-spacing: -0.2px;
+}
+
+a {
+  text-decoration: none;
+  color: #342A83;
+}
+
+.more {
+  grid-column: span 12;
+  margin-left: auto;
+  margin-right: 20px;
+  color: #342A83;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: -0.2px;
+}
+
+/* Hero section */
+
+.tour-of-the-day {
+  background-color: white;
+  border-radius: 10px;
+  display: inline-flex;
+  width: 60%;
+  flex-shrink: 2;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 20px;
+  vertical-align: top;
+}
+
+.tour-of-the-day > div {
+  display: inline;
+}
+  
+.block-img {
+  width: 40%;
+}
+  
+.block-img > img {
+  width: 90%;
+
+}
+  
+.block-text {
+  width: 60%;
+}
+  
+.img-back {
+  display: inline-flex;
+  width: 38%;
+  vertical-align: top;
+}
+
+.img-back > img {
+  width: 100%;
+}
+
+.text {
+  color: #000;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.2px;
+}
+
+/* Events section */
+
+.hot-events {
+  display: grid;
+}
+
+.hot-events > h2 {
+  grid-column: 1 / span 12;
+}
+
+/* Party widgets */
+
+.party-widget > h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.party-widget > .subtitles {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.party-widget {
+  display:grid;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.party-widget > img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.party-widget > button {
+  border-radius: 4px;
+  background:#191D21;
+  color: white;
+  width: 20%;
+}
+
+#widget-1 {
+  grid-column: 1 / span 4;
+}
+
+#widget-2 {
+  grid-column: 5 / span 4;
+}
+
+#widget-3 {
+  grid-column: 9 / span 4;
+}
+
+/* Hungry guides section */
+
+.hungry {
+  display: grid;
+}
+
+.hungry > h2 {
+  grid-column: 1 / span 12;
+}
+
+.place {
+  margin: 10px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.place > img {
+  width: 90%;
+  border-radius: 16px;
+  display: block;
+  margin: 0 auto;
+  }
+
+.place > h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.place > button {
+  border-radius: 2px;
+  border: 1px solid #191D21;
+  background: #FFF;
+  width: 90%;
+  display: block;
+  font-family: Nunito;
+  font-size: 1rem;
+}
+
+/* Subscribtion section */
+
+.subscribe {
+  display: inline-flex;
+  flex-direction: row;
+  background-color: #342A83;
+  padding: 20px;
+  color: white;
+  margin-top: 20px;
+}
+
+.sub-text > h2 {
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.sub-text > p {
+  font-style: italic;
+}
+
+.subscribe > .sub-text, .sub-form {
+  width: 50%;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px;
+  flex-direction: column;
+  vertical-align: top;
+} 
+
+.subscribe > .sub-form {
+  display: flex;
+  align-items: center;
+}
+
+#field {
+  width: 60%;
+  height: 30px;
+  border-radius: 2px;
+  border: 1px solid #FED600;
+}
+
+#subscribe-button {
+  width: fit-content;
+  border-radius: 2px;
+  border: 1px solid #FFF;
+  background: #FED600;
+  color: #342A83;
+  margin: 10px;
+  font-family: 'Nunito';
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.sub-checkbox {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+label {
+  display: block;
+  position: relative;
+}
+
+/* Footer */
+
+footer {
+  background: linear-gradient(120deg, #7E6EEF 0%, #E57FF0 50%, #FED600 100%);
+  display: flex;
+  margin-top: 30px; 
+  padding: 20px;
+  justify-content: space-around;
+  color: white;
+  font-weight: 600;
+}
